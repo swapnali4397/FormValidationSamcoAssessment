@@ -1,0 +1,204 @@
+/* For Desktop */
+.validForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form-container {
+    margin-top: 3.75rem;
+    padding: 2rem 5rem;
+    border: 2px solid black;
+    overflow-y: auto;
+    max-height: 100%;
+    position: relative;
+}
+
+.formTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 2px;
+}
+
+.custom-button {
+    width: 100%;
+    background-color: #f1f1ea;
+    border: 1px solid #636363;
+    color: black;
+    padding: 10px 42px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.success-message {
+    color: green;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.form-group label {
+    display: inline-block;
+    width: 5rem;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.form-group select {
+    width: 12.5rem;
+    padding: 5px 0;
+}
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-dropdown select {
+    max-width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+}
+
+.custom-dropdown select:focus {
+    border-color: #007bff;
+}
+
+.custom-dropdown::after {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.custom-dropdown label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.current-result {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.current-result h2 {
+    margin-bottom: 10px;
+}
+
+.current-result ul {
+    list-style: none;
+    padding: 0;
+}
+
+.current-result li {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.current-result li strong {
+    margin-right: 4px;
+    width: 5rem;
+}
+
+/* For Tablets */
+@media (max-width: 1024px) {
+    .formTitle {
+        font-size: 1.125rem;
+    }
+
+    .form-container {
+        padding: 2rem 3rem;
+        max-width: 100%;
+    }
+
+    .form-group label {
+        width: 6.25rem;
+        margin-right: 5px;
+        font-size: 14px;
+    }
+
+    .form-group select {
+        width: 11.25rem;
+        padding: 8px 0;
+    }
+
+    .custom-dropdown select {
+        font-size: 14px;
+    }
+
+    .custom-button {
+        padding: 8px 32px; 
+        font-size: 14px;
+    }
+
+    .success-message {
+        font-size: 14px;
+    }
+}
+
+/* For Mobile */
+@media (max-width: 768px) {
+    .formTitle {
+        font-size: 1rem;
+    }
+
+    .form-container {
+        padding: 1.25rem;
+        margin: 60px 10px 0 10px;
+    }
+
+    .form-group {
+        width: 100%;
+        padding: 8px 0;
+        font-size: 14px;
+    }
+
+    .form-group label {
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+
+    .custom-dropdown {
+        font-size: 12px;
+    }
+
+    .custom-button {
+        padding: 5px 20px;
+        font-size: 12px;
+    }
+
+    .success-message {
+        font-size: 12px;
+    }
+}

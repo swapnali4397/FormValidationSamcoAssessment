@@ -1,6 +1,40 @@
-# Getting Started with Create React App
+## Form Validation Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a form validation assessment that includes features such as a sidebar, header, form, and display of form results. The sidebar provides access to the history of form submissions, the header displays the title of the application, and the form allows users to input data and validate it. Additionally, the form result is displayed below the form upon submission.
+
+## Features
+
+## Sidebar
+1. The sidebar displays a history of form submissions.
+2. Users can click on a result in the sidebar to view its details.
+
+## Header
+1. The header displays the title of the application.
+2. It includes a menu icon to toggle the sidebar.
+
+## Form
+1. The form allows users to input data and submit it for validation.
+2. Validation messages are displayed for invalid inputs.
+
+## Form Result
+1. The form result is displayed below the form upon submission.
+2. It shows the details of the latest form submission.
+3. The form result automatically disappears after 30 seconds.
+
+
+## Usage
+To use this project:
+
+1. Clone the repository to your local machine.
+2. Install the necessary dependencies using npm install.
+3. Run the project using npm start.
+4. Access the application in your web browser.
+
+## Technologies Used
+React.js
+HTML
+CSS
+JavaScript
 
 ## Available Scripts
 
@@ -29,8 +63,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
 If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
@@ -38,34 +70,3 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# dropdownFormValidation

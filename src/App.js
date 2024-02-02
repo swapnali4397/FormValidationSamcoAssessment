@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import HistorySidebar from './Components/HistorySidebar';
-import FormContainer from './Components/FormContainer';
-
+import HistorySidebar from './Components/HistorySidebar/index.js';
+import FormContainer from './Components/FormContainer/index.js';
 function App() {
   const [formData, setFormData] = useState({
     countries: [],
@@ -12,7 +11,7 @@ function App() {
   });
   const [formHistory, setFormHistory] = useState([]);
   const [successMessage, setSuccessMessage] = useState('');
-  const [currentResult, setCurrentResult] = useState(null);
+  const [formResult, setFormResult] = useState(null);
   const [expandedResults, setExpandedResults] = useState([]);
   const [sidebarOpen, setSidebarOpen] = useState(false); 
 
@@ -26,13 +25,13 @@ function App() {
 
   useEffect(() => {
     let timeoutId;
-    if (currentResult) {
+    if (formResult) {
       timeoutId = setTimeout(() => {
-        setCurrentResult(null);
+        setFormResult(null);
       }, 30000);
     }
     return () => clearTimeout(timeoutId);
-  }, [currentResult]);
+  }, [formResult]);
 
   const fetchFormData = async () => {
     return {
@@ -45,11 +44,11 @@ function App() {
 
   const addToHistory = (result) => {
     setFormHistory(prevHistory => [...prevHistory, result]);
-    setCurrentResult(result);
+    setFormResult(result);
     setSuccessMessage('Form submitted successfully!');
     setTimeout(() => {
       setSuccessMessage('');
-      setCurrentResult(null);
+      setFormResult(null);
     }, 30000);
   };
 
@@ -65,7 +64,7 @@ function App() {
 
   const handleFieldClick = () => {
     setSuccessMessage('');
-    setCurrentResult(null);
+    setFormResult(null);
   };
 
   const toggleSidebar = () => {
@@ -92,15 +91,15 @@ function App() {
         <FormContainer
           formData={formData}
           successMessage={successMessage}
-          currentResult={currentResult}
+          formResult={formResult}
           handleFieldClick={handleFieldClick}
           addToHistory={addToHistory}
         />
-      {currentResult && (
+      {formResult && (
         <div className="current-result">
           <h2>Form Output</h2>
           <ul>
-            {Object.entries(currentResult).map(([key, value]) => (
+            {Object.entries(formResult).map(([key, value]) => (
               <li key={key}>
                 <strong>{key}:</strong> {value}
               </li>
